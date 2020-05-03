@@ -1,0 +1,15 @@
+.class {
+  width: 90%;
+  color: white;
+  background-color: #1d1d1d;
+  border-radius: 10px;
+  margin: 10px auto;
+  padding: 20px 5px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  opacity: 1;
+  transition: all 1s ease-in;
+}
+
+.class__passed {
+  opacity: 0.4;
+}
