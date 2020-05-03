@@ -44,7 +44,7 @@ const Timer = (props) => {
       // DOM manipulation
       if (filteredClasses[0][1] === "Class" && scheduleHours === "00") {
         setText("Next class starts in:");
-        setTimer(`${scheduleHours}:${scheduleMinutes}`);
+        setTimer(`${scheduleMinutes} min`);
         setClassMode(false);
       } else if (filteredClasses[0][1] === "Class") {
         setText("Next class starts:");
@@ -52,7 +52,7 @@ const Timer = (props) => {
         setClassMode(false);
       } else if (filteredClasses[0][1] === "Class end") {
         setText("Crossfit class");
-        setTimer(`${scheduleHours}:${scheduleMinutes}`);
+        setTimer(`${scheduleMinutes} min`);
         setClassMode(true);
       }
     } else {
@@ -82,7 +82,7 @@ const Timer = (props) => {
           {text}
         </h1>
         <h1
-          style={{ fontSize: classMode ? "18vw" : "50px" }}
+          style={{ fontSize: classMode ? "14vw" : "50px" }}
           className="timer__time"
         >
           {timer}
