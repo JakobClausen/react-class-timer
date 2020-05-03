@@ -7,7 +7,7 @@ const ClassItem = (props) => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      if (moment(props.timeObject).format("HH:mm") < props.clock) {
+      if (moment(props.timeObject).format("HH:mm") <= props.clock) {
         setClassedPassed("class__passed");
       }
     }, 1000);
@@ -16,8 +16,8 @@ const ClassItem = (props) => {
 
   return (
     <div className={`class ${classedPassed}`}>
-      <p className="class__time">{props.timeString}</p>
-      <p className="class__coach">{props.coach}</p>
+      <div className="class__dot"></div>
+      <p className="class__info">{props.classType} - {props.timeString} - {props.coach}</p>
     </div>
   );
 };

@@ -24,7 +24,7 @@
 }
 .small__clock {
   color: white;
-  font-size: 4vw;
+  font-size: 3vw;
   transition: all 0.3s ease-in;
   padding: 20px;
 }
