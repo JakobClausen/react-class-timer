@@ -31,7 +31,7 @@ function App() {
     }, 1000);
     return () => clearInterval(interval);
   }, []);
-
+document.title = "Class-timer"
   return (
     <div className="App">
       {/* <p className="App__message">{message}</p> */}
