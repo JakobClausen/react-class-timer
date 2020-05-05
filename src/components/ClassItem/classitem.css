@@ -9,7 +9,7 @@
 }
 
 .class__passed {
-  opacity: 0.4;
+  opacity: 0.3;
 }
 .class__dot {
   width: 8px;
@@ -19,7 +19,7 @@
   background-color: white;
 }
 .class__info {
-  font-size: 1.2vw;
+  font-size: 1.6vw;
 }
 
 .test__test {

@@ -46,11 +46,11 @@ export const Schedule = [
       "17:50",
       "Emil",
       "Crossfit",
-      { hour: 17, minute: 50 },
+      { hour: 18, minute: 35 },
     ],
     [{ hour: 18, minute: 35 }, "Class end"],
   ],
-  // Tuseday
+  // Tuesday
   [
     [
       { hour: 12, minute: 0 },
@@ -76,7 +76,7 @@ export const Schedule = [
       "17:50",
       "Jakob",
       "Crossfit",
-      { hour: 17, minute: 50 },
+      { hour: 18, minute: 35 },
     ],
     [{ hour: 18, minute: 35 }, "Class end"],
   ],
@@ -99,7 +99,7 @@ export const Schedule = [
       "Crossfit",
       { hour: 17, minute: 45 },
     ],
-    [{ hour: 17, minute: 50 }, "Class end"],
+    [{ hour: 17, minute: 45 }, "Class end"],
     [
       { hour: 17, minute: 50 },
       "Class",
@@ -129,7 +129,7 @@ export const Schedule = [
       "Crossfit",
       { hour: 17, minute: 45 },
     ],
-    [{ hour: 17, minute: 50 }, "Class end"],
+    [{ hour: 17, minute: 45 }, "Class end"],
     [
       { hour: 17, minute: 50 },
       "Class",
