@@ -65,7 +65,7 @@ const Timer = (props) => {
       }
     } catch (error) {
       setTimer(null);
-      setText("No more classes today");
+      setText("No classes today");
       setClassMode(false);
     }
   }, [props.futureClasses, props.clock]);
