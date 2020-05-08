@@ -1,21 +1,16 @@
-import React, { useState, useEffect } from "react";
-import "./classitem.css";
-import moment from "moment";
-
-const ClassItem = (props) => {
-  const [classedPassed, setClassedPassed] = useState(null);
-
-  useEffect(() => {
+useEffect(() => {
     const interval = setInterval(() => {
       if (moment(props.timeObject).format("HH:mm") <= props.clock) {
-        setClassedPassed("class__passed");
+        setClassedPassed(true);
+      } else {
+        setClassedPassed(false);
       }
     }, 1000);
     return () => clearInterval(interval);
   });
 
   return (
-    <div className={`class ${classedPassed}`}>
+    <div style={{ opacity: classedPassed ? "1" : "0.3" }} className={"class"}>
       <div className="class__dot"></div>
       <p className="class__info">
         {props.classType} - {props.timeString} - {props.coach}
@@ -23,5 +18,3 @@ const ClassItem = (props) => {
     </div>
   );
 };
-
-export default ClassItem;

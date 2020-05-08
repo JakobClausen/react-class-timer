@@ -8,9 +8,6 @@
   align-items: center;
 }
 
-.class__passed {
-  opacity: 0.3;
-}
 .class__dot {
   width: 8px;
   height: 8px;
