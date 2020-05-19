@@ -7,8 +7,10 @@ const ClassItem = (props) => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      if (moment(props.timeObject).format("HH:mm") <= props.clock) {
+      if (moment(props.timeObject).format("HH:mm") < props.clock) {
         setClassedPassed("class__passed");
+      } else {
+        setClassedPassed(null);
       }
     }, 1000);
     return () => clearInterval(interval);

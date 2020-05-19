@@ -3,7 +3,6 @@ import "./ScheduleList.css";
 import ClassItem from "./../ClassItem/ClassItem";
 
 const ScheduleList = (props) => {
-  console.log(props.data);
   return (
     <div className="list">
       <div className="list__timeline">

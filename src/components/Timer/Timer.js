@@ -11,13 +11,12 @@ const Timer = (props) => {
 
   useEffect(() => {
     // If there is any classes left today
-    console.log(props.futureClasses);
     try {
       if (
         moment(props.futureClasses[props.futureClasses.length - 1][0]).format(
           "HH:mm"
         ) > props.clock ||
-        props.futureClasses == 0
+        props.futureClasses === 0
       ) {
         let filteredClasses = props.futureClasses.filter((x) => {
           return moment(x[0]).format("HH:mm") > props.clock;

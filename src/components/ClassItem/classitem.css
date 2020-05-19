@@ -22,3 +22,7 @@
 .test__test {
   display: block;
 }
+
+.class__passed {
+  opacity: 0.3;
+}
