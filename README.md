@@ -1,5 +1,5 @@
 # Class timer
-[fysikentimer.netlify](https://fysikentimer.netlify.com/)
+[https://react-class-timer.netlify.app](https://react-class-timer.netlify.app/)
 
 Remade my previous app in react js and added a schedule on the side. 
 -- 
