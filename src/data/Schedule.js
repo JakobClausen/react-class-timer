@@ -141,7 +141,26 @@ export const Schedule = [
     [{ hour: 18, minute: 35 }, "Class end"],
   ],
   // Friday
-  [],
+  [
+    [
+      { hour: 16, minute: 30 },
+      "Class",
+      "15:30",
+      "Ignacio",
+      "Crossfit",
+      { hour: 17, minute: 15 },
+    ],
+    [{ hour: 17, minute: 15 }, "Class end"],
+    [
+      { hour: 17, minute: 20 },
+      "Class",
+      "17:20",
+      "Ignacio",
+      "Crossfit",
+      { hour: 18, minute: 5 },
+    ],
+    [{ hour: 18, minute: 5 }, "Class end"],
+  ],
   [
     // saturday
     [
