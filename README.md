@@ -14,6 +14,14 @@ A web app that counts down to the next training class and each break between cla
  <img src="/gitimg/two.png" alt="Class timer by Jakob Clausen" width="738">
 </p>
 
+<p align="center">
+<img src="/gitimg/three.png" alt="Class timer by Jakob Clausen" width="738">
+</p>     
+     
+<p align="center">         
+ <img src="/gitimg/four.jpg" alt="Class timer by Jakob Clausen" width="738">
+</p>
+
 ## Built With
 
 * React js
