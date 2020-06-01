@@ -11,7 +11,7 @@ const ScheduleList = (props) => {
         <div className="list__timeline__overlay-bottom"></div>
       </div>
       <div className="list__container">
-        {props.data.map((item, i) => {
+        {props.todaysClasses.map((item, i) => {
           if (item[1] !== "Class end") {
             return (
               <ClassItem

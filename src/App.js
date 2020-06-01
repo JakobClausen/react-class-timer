@@ -3,8 +3,10 @@ import "./App.css";
 import moment from "moment";
 import { Schedule } from "./data/Schedule";
 import Logo from "./components/Logo/Logo";
-import ScheduleList from "./components/ScheduleList/ScheduleList";
-import Content from "./components/Content/Content";
+import CrossfitFinal from "./components/crossfitFinal/crossfitFinal";
+import ClockView from "./components/onlyClockView/clockView";
+
+import { Router } from "@reach/router";
 
 function App() {
   const [todaysClasses, setTodaysClasses] = useState(Schedule[moment().day()]);
@@ -23,8 +25,10 @@ function App() {
   return (
     <div className="App">
       <Logo />
-      <ScheduleList data={todaysClasses} clock={clock} />
-      <Content data={todaysClasses} clock={clock} />
+      <Router>
+        <CrossfitFinal path="/" todaysClasses={todaysClasses} clock={clock} />
+        <ClockView path="/clock" clock={clock} />
+      </Router>
     </div>
   );
 }
