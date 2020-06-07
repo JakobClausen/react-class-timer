@@ -1,0 +1,14 @@
+.temp {
+  font-size: 5vw;
+}
+
+.temp__celsius {
+  font-size: 2vw;
+  position: absolute;
+  margin: 0.8% 0.3%;
+}
+
+.temp__img {
+  width: 10vw;
+  margin-left: 13%;
+}

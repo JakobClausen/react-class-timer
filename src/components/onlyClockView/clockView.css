@@ -7,6 +7,27 @@
 }
 .clock__view__clock {
   color: white;
-  font-size: 27vw;
+  font-size: 23vw;
   font-weight: 300;
+  margin-bottom: 10%;
+}
+.clock__view__date__weather {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: 10%;
+  display: grid;
+  grid-template-rows: 28% auto;
+  grid-template-columns: auto;
+  margin: auto;
+  justify-content: center;
+}
+.clock__view__date {
+  font-size: 3.5vw;
+}
+
+.clock__view__weather {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
