@@ -6,9 +6,10 @@ const Weather = (props) => {
   const [weather, setWeather] = useState(null);
 
   const getWeather = async () => {
-    const weatherAPI = `https://api.openweathermap.org/data/2.5/weather?lat=57.71&lon=11.97&appid=${process.env.REACT_APP_API_KEY}&units=metric`;
     try {
-      const response = await fetch(weatherAPI);
+      const response = await fetch(
+        "https://fysiken-weather.herokuapp.com/data"
+      );
       const data = await response.json();
       const path = weatherIcon(data.weather[0].description);
       setWeather({ ...data, icon: path });
@@ -19,6 +20,10 @@ const Weather = (props) => {
 
   useEffect(() => {
     getWeather();
+    const interval = setInterval(() => {
+      getWeather();
+    }, 60000);
+    return () => clearInterval(interval);
   }, []);
 
   if (!weather) {
@@ -37,3 +42,15 @@ const Weather = (props) => {
 };
 
 export default Weather;
+
+// const getWeather = async () => {
+//   const weatherAPI = `https://api.openweathermap.org/data/2.5/weather?lat=57.71&lon=11.97&appid=${process.env.REACT_APP_API_KEY}&units=metric`;
+//   try {
+//     const response = await fetch(weatherAPI);
+//     const data = await response.json();
+//     const path = weatherIcon(data.weather[0].description);
+//     setWeather({ ...data, icon: path });
+//   } catch (error) {
+//     console.log(error);
+//   }
+// };
