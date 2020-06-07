@@ -33,7 +33,6 @@ const weatherIcon = (condition) => {
     default:
       icon = cloudy;
   }
-  console.log("yopyo");
 
   return icon;
 };
