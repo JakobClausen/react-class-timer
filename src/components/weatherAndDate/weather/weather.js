@@ -20,7 +20,6 @@ const Weather = (props) => {
   useEffect(() => {
     getWeather();
   }, []);
-  console.log(weather);
 
   if (!weather) {
     return <></>;
