@@ -15,7 +15,7 @@
   width: 100%;
   height: auto;
   position: absolute;
-  bottom: 10%;
+  bottom: 0;
   display: grid;
   grid-template-rows: 28% auto;
   grid-template-columns: auto;

@@ -18,6 +18,8 @@ const Weather = (props) => {
     }
   };
 
+  console.log(weather);
+
   useEffect(() => {
     getWeather();
     const interval = setInterval(() => {
