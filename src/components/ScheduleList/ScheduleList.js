@@ -16,10 +16,9 @@ const ScheduleList = (props) => {
             return (
               <ClassItem
                 key={i}
-                coach={item[3]}
                 timeString={item[2]}
-                timeObject={item[5]}
-                classType={item[4]}
+                timeObject={item[4]}
+                classType={item[3]}
                 clock={props.clock}
               />
             );

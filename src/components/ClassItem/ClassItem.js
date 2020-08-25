@@ -20,7 +20,7 @@ const ClassItem = (props) => {
     <div className={`class ${classedPassed}`}>
       <div className="class__dot"></div>
       <p className="class__info">
-        {props.classType} - {props.timeString} - {props.coach}
+        {props.classType} - {props.timeString}
       </p>
     </div>
   );
