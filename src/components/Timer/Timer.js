@@ -8,7 +8,7 @@ const Timer = (props) => {
   const [timer, setTimer] = useState("00:00");
   const [text, setText] = useState("Fysiken Crossfit");
   const [classMode, setClassMode] = useState(true);
-
+  console.log(props.futureClasses);
   useEffect(() => {
     // If there is any classes left today
     try {
@@ -25,7 +25,6 @@ const Timer = (props) => {
         // Countdown timer
         let distance =
           moment(filteredClasses[0][0]).format("x") - moment().format("x");
-
         // Hour
         let scheduleHours = Math.floor(
           (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)

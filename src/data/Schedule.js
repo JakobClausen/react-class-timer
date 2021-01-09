@@ -21,6 +21,14 @@ export const Schedule = [
   [
     // Monday
     [
+      { hour: 6, minute: 45 },
+      "Class",
+      "06:45",
+      "Crossfit",
+      { hour: 7, minute: 45 },
+    ],
+    [{ hour: 7, minute: 45 }, "Class end"],
+    [
       { hour: 11, minute: 45 },
       "Class",
       "11:45",
@@ -64,6 +72,14 @@ export const Schedule = [
   // Tuesday
   [
     [
+      { hour: 6, minute: 45 },
+      "Class",
+      "06:45",
+      "Crossfit",
+      { hour: 7, minute: 45 },
+    ],
+    [{ hour: 7, minute: 45 }, "Class end"],
+    [
       { hour: 11, minute: 45 },
       "Class",
       "11:45",
@@ -99,13 +115,29 @@ export const Schedule = [
       { hour: 19, minute: 0 },
       "Class",
       "19:00",
-      "Gymnastics",
+      "Crossfit",
       { hour: 20, minute: 0 },
     ],
     [{ hour: 20, minute: 0 }, "Class end"],
   ],
   // Wednesday
   [
+    [
+      { hour: 6, minute: 45 },
+      "Class",
+      "06:45",
+      "Crossfit",
+      { hour: 7, minute: 45 },
+    ],
+    [{ hour: 7, minute: 45 }, "Class end"],
+    [
+      { hour: 10, minute: 0 },
+      "Class",
+      "10:00",
+      "Crossfit",
+      { hour: 11, minute: 0 },
+    ],
+    [{ hour: 11, minute: 0 }, "Class end"],
     [
       { hour: 11, minute: 45 },
       "Class",
@@ -150,6 +182,14 @@ export const Schedule = [
   // Thursday
   [
     [
+      { hour: 6, minute: 45 },
+      "Class",
+      "06:45",
+      "Crossfit",
+      { hour: 7, minute: 45 },
+    ],
+    [{ hour: 7, minute: 45 }, "Class end"],
+    [
       { hour: 11, minute: 45 },
       "Class",
       "11:45",
@@ -161,7 +201,7 @@ export const Schedule = [
       { hour: 16, minute: 0 },
       "Class",
       "16:00",
-      "Gymnastics",
+      "Crossfit",
       { hour: 16, minute: 55 },
     ],
     [{ hour: 16, minute: 55 }, "Class end"],
@@ -185,6 +225,22 @@ export const Schedule = [
   // Friday
   [
     [
+      { hour: 6, minute: 45 },
+      "Class",
+      "06:45",
+      "Crossfit",
+      { hour: 7, minute: 45 },
+    ],
+    [{ hour: 7, minute: 45 }, "Class end"],
+    [
+      { hour: 10, minute: 0 },
+      "Class",
+      "10:00",
+      "Crossfit",
+      { hour: 11, minute: 0 },
+    ],
+    [{ hour: 11, minute: 0 }, "Class end"],
+    [
       { hour: 11, minute: 45 },
       "Class",
       "11:45",
@@ -193,56 +249,40 @@ export const Schedule = [
     ],
     [{ hour: 12, minute: 45 }, "Class end"],
     [
-      { hour: 16, minute: 0 },
+      { hour: 16, minute: 30 },
       "Class",
-      "16:00",
+      "16:30",
       "Crossfit",
-      { hour: 16, minute: 55 },
+      { hour: 17, minute: 25 },
     ],
-    [{ hour: 16, minute: 55 }, "Class end"],
+    [{ hour: 17, minute: 25 }, "Class end"],
     [
-      { hour: 17, minute: 0 },
+      { hour: 17, minute: 30 },
       "Class",
-      "17:00",
+      "17:30",
       "Crossfit",
-      { hour: 17, minute: 55 },
+      { hour: 18, minute: 30 },
     ],
-    [{ hour: 17, minute: 55 }, "Class end"],
-    [
-      { hour: 18, minute: 0 },
-      "Class",
-      "18:00",
-      "Crossfit",
-      { hour: 19, minute: 0 },
-    ],
-    [{ hour: 19, minute: 0 }, "Class end"],
+    [{ hour: 18, minute: 30 }, "Class end"],
   ],
   [
     // Saturday
     [
-      { hour: 9, minute: 0 },
+      { hour: 9, minute: 30 },
       "Class",
-      "10:00",
+      "09:30",
       "Crossfit",
-      { hour: 9, minute: 55 },
+      { hour: 10, minute: 25 },
     ],
-    [{ hour: 9, minute: 55 }, "Class end"],
+    [{ hour: 10, minute: 25 }, "Class end"],
     [
-      { hour: 10, minute: 0 },
+      { hour: 10, minute: 30 },
       "Class",
-      "10:00",
+      "10:30",
       "Crossfit",
-      { hour: 10, minute: 55 },
+      { hour: 11, minute: 25 },
     ],
-    [{ hour: 10, minute: 55 }, "Class end"],
-    [
-      { hour: 11, minute: 0 },
-      "Class",
-      "11:00",
-      "Crossfit",
-      { hour: 12, minute: 0 },
-    ],
-    [{ hour: 12, minute: 0 }, "Class end"],
+    [{ hour: 11, minute: 25 }, "Class end"],
   ],
 ];
 
